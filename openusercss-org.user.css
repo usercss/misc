@@ -1,0 +1,39 @@
+/* ==UserStyle==
+@name         openusercss.org no gravatar
+@version      0.1.0
+@description  openusercss.org no gravatar
+@namespace    tst2005
+@author       tst2005
+@homepageURL  https://github.com/usercss/misc
+@supportURL   https://github.com/usercss/misc/issues
+@updateURL    https://raw.githubusercontent.com/usercss/misc/master/openusercss-org.user.css
+@license      MIT
+@preprocessor uso
+==/UserStyle== */
+@-moz-document domain("openusercss.org") {
+/* figure.image { display: none !important; } */
+.is-loading {
+    display: none !important;
+}
+
+.is-brand-primary { background: transparent; color: black;}
+
+/*
+div.ouc-responsive-image[class^="-gravatar-com-avatar-"] {
+    display: none;
+}
+*/
+.notification.is-warning {
+    display: none;
+}
+
+/* hide footer bar */
+div.ouc-footer-wrapper div.ouc-im-broke.is-fullheight {
+    display: none;
+}
+
+/* hide footer */
+div.footer {
+    display:none!important;
+}
+}
