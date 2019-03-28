@@ -1,2 +1,8 @@
+* [bortzmeyer.org - dark theme](https://github.com/usercss/misc/raw/master/bortzmeyer-org.user.css)
+* [gitea - book writers project on gitea](https://github.com/usercss/misc/raw/master/gitea-bookwriter.user.css)
+* [gitea §](https://github.com/usercss/misc/raw/master/gitea-paragrapher.user.css)
+* [gitea - simple interface for gitea](https://github.com/usercss/misc/raw/master/gitea-simple-interface.user.css)
+* [gitea - username in menu](https://github.com/usercss/misc/raw/master/gitea-username-in-menu.user.css)
 * [github.com - justified markdown text](https://github.com/usercss/misc/raw/master/github-com-justified-markdown.user.css)
+* [github.com - no-popup](https://github.com/usercss/misc/raw/master/github-com-no-popup.user.css)
 * [openusercss.org no gravatar](https://github.com/usercss/misc/raw/master/openusercss-org.user.css)

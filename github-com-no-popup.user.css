@@ -1,0 +1,50 @@
+/* ==UserStyle==
+@name         github.com - no-popup
+@version      0.1.0
+@description  github.com - no-popup
+@namespace    tst2005/github-com-no-popup
+@author       tst2005
+@homepageURL  https://github.com/usercss/misc
+@supportURL   https://github.com/usercss/misc/issues
+@updateURL    https://github.com/usercss/misc/raw/master/github-com-no-popup.user.css
+@license      MIT
+@preprocessor uso
+==/UserStyle== */
+@-moz-document url-prefix("https://github.com/") {
+/* no sign up */
+body.logged-out div.signup-prompt-bg,
+#show_issue div#discussion_bucket div.discussion-timeline-actions div.flash.flash-warn,
+div.issues-listing div.signup-prompt-bg {display: none;}
+
+
+div.content.text-center.js-banner,
+.protip {
+    display: none;
+}
+
+/* hide info popup but not all (show the diff-settings, etc.) */
+.Popover.js-notice > .Popover-message {
+    display: none;
+}
+
+
+div.Popover > div.Popover-message.Popover-message--left-top.Box {
+    display: none;
+}
+
+/* no status */
+.user-status-container-border {
+    display:none;
+}
+
+details-menu.dropdown-menu div.user-status-container.js-user-status-context,
+details-menu.dropdown-menu div.dropdown-divider:nth-child(4) {
+    display:none;
+}
+
+/* tips in team management */
+main div.js-check-all-container div.orgs-help-shelf.js-notice div.container-lg {
+    display:none;
+}
+
+}

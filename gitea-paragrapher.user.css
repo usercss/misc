@@ -1,0 +1,106 @@
+/* ==UserStyle==
+@name         gitea §
+@version      0.1.0
+@description  gitea - numbering each paragraph and line
+@namespace    tst2005/gitea-paragrapher
+@author       tst2005
+@homepageURL  https://github.com/usercss/misc
+@supportURL   https://github.com/usercss/misc/issues
+@updateURL    https://github.com/usercss/misc/raw/master/gitea-paragrapher.user.css
+@license      MIT
+@preprocessor uso
+==/UserStyle== */
+/* http://blog.demotera.com/published/2010-09-27-Numerotation-en-css.html */
+body {
+    counter-reset: h1 h2 h3 p li;
+}
+div.file div.file-view.markdown h1:before {
+    content: counter(h1) ".  ";
+    counter-increment: h1;
+}
+div.file div.file-view.markdown h2:before {
+    content: counter(h1) "." counter(h2) "  ";
+    counter-increment: h2;
+}
+div.file div.file-view.markdown h3:before {
+    content: counter(h1) "." counter(h2) "." counter(h3) "  ";
+    counter-increment: h3;
+}
+
+/*ul:before,*/
+div.markdown.active p:before,
+div.file div.file-view.markdown p:before {
+    counter-increment: p;
+    content: "§ " counter(p) " "!important;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: orange;
+    margin-left: -30px;
+    padding-right: 20px;
+    /* display: block; */
+    /*display: run-in;*/
+}
+
+/* TODO: pour avoir le marqueur et paragraphe a la meme ligne que la 1ere li
+il faudrait convertir
+  ul:before -> li:before:child(1)
+  li:before -> li:before:not(child(1)) ou li:before:child(2+)
+*/
+div.markdown.active ul:before,
+div.file div.file-view.markdown ul:before {
+    counter-increment: p;
+    content: "§ " counter(p) " "!important;
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: bold;
+    color: orange;
+    margin-left: -30px;
+}
+div.markdown.active ul,
+div.file div.file-view.markdown ul {
+    list-style: none!important;
+    padding-left: 0px;
+}
+div.markdown.active li:before,
+div.file div.file-view.markdown li:before {
+    counter-increment: li;
+    content: " — (" counter(li) ")"!important;
+    font-size: 0.8em;
+    font-style: italic;
+    /*font-weight: bold;*/
+    color: blue;
+    /* display: block; */
+    /* display: run-in; */
+    /*margin-left: -30px;*/
+    padding-right: 8px;
+    /* espace entre le tiret et le texte */
+}
+h1 {
+    counter-reset: h2 p;
+}
+h2 {
+    counter-reset: h3 p;
+}
+h3,
+h4,
+h5,
+h6 {
+    counter-reset: p;
+}
+ul {
+    counter-reset: li;
+}
+
+/*
+h1.unnumbered,
+h2.unnumbered {
+    counter-reset: none;
+}
+h1.unnumbered:before,
+h2.unnumbered:before,
+h3.unnumbered:before {
+    content: none;
+    counter-increment: none;
+}
+*/

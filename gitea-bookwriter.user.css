@@ -1,0 +1,72 @@
+/* ==UserStyle==
+@name         gitea - book writers project on gitea
+@version      0.1.0
+@description  gitea - book writers project on gitea
+@namespace    tst2005/gitea-bookwriter
+@author       tst2005
+@homepageURL  https://github.com/usercss/misc
+@supportURL   https://github.com/usercss/misc/issues
+@updateURL    https://github.com/usercss/misc/raw/master/gitea-bookwriter.user.css
+@license      MIT
+@preprocessor uso
+==/UserStyle== */
+@-moz-document url-prefix("https://try.gitea.io/"), regexp("https://[^/]+/gitea[/.-].*") {
+/* Justifier les textes */
+html body div.repository.file.list div.non-diff-file-content div.file-view.markdown ul li,
+html body div.file.editor.edit div.markdown.active p,
+html body div.repository.wiki.view div.markdown p,
+html body div.file-view.markdown p {
+    text-align: justify;
+}
+
+/* Ne pas mettre d'espace entre les paragraphes */
+html body div.file.editor.edit div.markdown.active p,
+html body div.full.height div.repository.file div.non-diff-file-content div.file-view.markdown p {
+    margin-bottom: 0px;
+}
+
+/* Afficher un tiret pour les listes qui nous servent pour les dialogues */
+html body div.file.editor.edit div.markdown.active ul,
+html body div.file-view.markdown ul {
+    list-style: none!important;
+    /* Remove list bullets */
+    /* list-style: square inside url("sqpurple.gif"); */
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0px;
+}
+html body div.file.editor.edit div.markdown.active li,
+html body div.file-view.markdown li {
+    /* list-style: none!important; */
+    padding-right: 0px!important;
+    /* padding-left: 8px; */
+    /*padding-left: 16px;*/
+}
+html body div.file.editor.edit div.markdown.active li:before,
+html body div.file-view.markdown li:before {
+    /* color: red!important; */
+    content: "—"!important;
+    padding-right: 8px!important;
+}
+/* ************************************************************ */
+
+/* pour le wifi */
+html body div.repository.wiki.view div.markdown p {
+    margin-bottom: 0px;
+}
+html body div.repository.wiki.view div.markdown ul {
+    list-style: none!important;
+    /* padding: 0; */
+    /* margin: 0; */
+}
+html body div.repository.wiki.view div.markdown li {
+    padding-right: 0px;
+}
+html body div.repository.wiki.view div.markdown > ul > li > p {
+    display: inline;
+}
+html body div.repository.wiki.view div.markdown li:before {
+    content: "➜"!important;
+    padding-right: 8px!important;
+}
+}

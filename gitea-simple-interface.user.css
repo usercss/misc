@@ -1,0 +1,76 @@
+/* ==UserStyle==
+@name         gitea - simple interface for gitea
+@version      0.1.0
+@description  gitea - simple interface for gitea
+@namespace    tst2005/gitea-simple-interface
+@author       tst2005
+@homepageURL  https://github.com/usercss/misc
+@supportURL   https://github.com/usercss/misc/issues
+@updateURL    https://github.com/usercss/misc/raw/master/gitea-simple-interface.user.css
+@license      MIT
+@preprocessor uso
+==/UserStyle== */
+@-moz-document url-prefix("https://try.gitea.io/"), regexp("https://[^/]+/gitea[/.-].*") {
+/* Hide: Follow, Start, Fork */
+div.repository div.header-wrapper div.ui.grid.header-grid div.ui.right {
+    display: none;
+}
+
+/* Hide: Branches */
+div.ui.two.horizontal.center.link.list div.item:nth-child(2) {
+    display: none;
+}
+
+/* Hide, https/ssh clone and copy buttons */
+div.repository.file.list #clone-panel {
+    display: none;
+}
+#clone-panel > #repo-clone-https,
+#clone-panel > #repo-clone-ssh,
+#clone-panel > #repo-clone-url,
+#clone-panel > #clipboard-btn {
+    display: none;
+}
+
+/* Hide last-change links in Repo content listing */
+div.repository.file.list table#repo-files-table tbody tr td.message.collapsing a {
+    display: none;
+}
+
+/* Hide Releases, Activities tabs */
+div.repository div.header-wrapper div.navbar a.item[href$="/releases"],
+div.repository div.header-wrapper div.navbar a.item[href$="/activity"] {
+    display: none;
+}
+
+/* Hide file dleete from code and wiki */
+div.repository.wiki.view a.delete-button,
+div.repository.wiki.view a[href="/_delete/"] {
+    display: none;
+}
+
+/* Hide: delete button on file */
+div.repository.file.list div.non-diff-file-content div.file-actions a i.octicon.octicon-trashcan.btn-octicon-danger {
+    display: none;
+}
+
+/* Hide: the danger zone in repo settings */
+div.repository.settings.options div.warning.danger {
+    display: none;
+}
+
+/* Increase the Edit button */
+.octicon-pencil:after {
+    content: 'Modifier';
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    /*line-height: 1em;*/
+    /*margin-right: 20px;*/
+}
+
+/* Hide the Branch button-menu selector */
+
+/* div.repository.file.list div.item.choose.reference { display: none; }*/
+}

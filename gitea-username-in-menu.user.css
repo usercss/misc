@@ -1,0 +1,39 @@
+/* ==UserStyle==
+@name         gitea - username in menu
+@version      0.1.0
+@description  gitea - username in menu
+@namespace    tst2005/gitea-username-in-menu
+@author       tst2005
+@homepageURL  https://github.com/usercss/misc
+@supportURL   https://github.com/usercss/misc/issues
+@updateURL    https://github.com/usercss/misc/raw/master/gitea-username-in-menu.user.css
+@license      MIT
+@preprocessor uso
+==/UserStyle== */
+@-moz-document url-prefix("https://try.gitea.io/"), regexp("https://[^/]+/gitea[/.-].*") {
+
+/*
+div.main.menu.bar div#navbar div.right.menu div.ui.dropdown div.menu div.header:before {
+    content: " ";
+    text-transform: initial;
+    font-size: initial;
+    text-align: center;
+}
+*/
+
+div.main.menu.bar div#navbar div.right.menu div.ui.dropdown div.menu div.header {
+    font-size: 0;
+    text-align: center;
+}
+
+div.main.menu.bar div#navbar div.right.menu div.ui.dropdown div.menu div.header > strong {
+    text-transform: initial;
+    font-size: initial;
+    text-align: center;
+}
+
+
+html body footer div.ui.container {
+    display: none
+}
+}
