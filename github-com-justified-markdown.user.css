@@ -1,0 +1,17 @@
+/* ==UserStyle==
+@name         github.com - justified markdown text
+@version      0.1.0
+@description  github.com - justified markdown text
+@namespace    tst2005
+@author       tst2005
+@homepageURL  https://github.com/usercss/misc
+@supportURL   https://github.com/usercss/misc/issues
+@updateURL    https://github.com/usercss/misc/raw/master/github-com-justified-markdown.user.css
+@license      MIT
+@preprocessor uso
+==/UserStyle== */
+@-moz-document domain("github.com") {
+html body article.markdown-body p {
+    text-align: justify;
+}
+}
