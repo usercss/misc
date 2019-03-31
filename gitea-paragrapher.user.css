@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         gitea §
-@version      0.1.0
+@version      0.1.1
 @description  gitea - numbering each paragraph and line
 @namespace    tst2005/gitea-paragrapher
 @author       tst2005
@@ -10,6 +10,7 @@
 @license      MIT
 @preprocessor uso
 ==/UserStyle== */
+@-moz-document url-prefix("https://try.gitea.io/"), regexp("https://[^/]+/gitea[/.-].*") {
 /* http://blog.demotera.com/published/2010-09-27-Numerotation-en-css.html */
 body {
     counter-reset: h1 h2 h3 p li;
@@ -104,3 +105,4 @@ h3.unnumbered:before {
     counter-increment: none;
 }
 */
+}
