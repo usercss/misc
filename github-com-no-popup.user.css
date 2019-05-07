@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         github.com - no-popup
-@version      0.1.0
+@version      0.2.0
 @description  github.com - no-popup
 @namespace    tst2005/github-com-no-popup
 @author       tst2005
@@ -44,6 +44,16 @@ details-menu.dropdown-menu div.dropdown-divider:nth-child(4) {
 
 /* tips in team management */
 main div.js-check-all-container div.orgs-help-shelf.js-notice div.container-lg {
+    display:none;
+}
+
+/* Team Up 2019 */
+html body.env-production aside[aria-label="Explore"] div.js-notice form.js-notice-dismiss[action^="/settings/dismiss-notice/"] {
+    display:none;
+}
+    
+/* Join us chat ... */
+html body.env-production aside[aria-label="Explore"] div.Box.border-blue.js-notice {
     display:none;
 }
 
