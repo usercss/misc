@@ -1,0 +1,24 @@
+/* ==UserStyle==
+@name         creditmutuel.fr - no popup, no ads
+@version      0.1.0
+@description  creditmutuel.fr - no popup, no ads
+@namespace    tst2005/imgur-com
+@author       tst2005
+@homepageURL  https://github.com/usercss/misc
+@supportURL   https://github.com/usercss/misc/issues
+@updateURL    https://github.com/usercss/misc/raw/master/creditmutuel-fr.user.css
+@license      MIT
+@preprocessor uso
+==/UserStyle== */
+@-moz-document url-prefix("https://creditmutuel.fr"), domain("creditmutuel.fr") {
+/* no interactive pop-up that want to chat with me! */
+html body div.ei-chat-main.ng-scope div.ng-scope {
+    display: none
+}
+
+/* no ads insertied in my menu */
+html body div#gamemessagescontainer1.gameconfigurablemessages div[id^="messageContainer"].messageContainer,
+html body div#gamemessagescontainer1.gameconfigurablemessages div[id^="messageContainer"].messageContainer:before {
+    display: none;!important;
+}
+}
