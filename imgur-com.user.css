@@ -1,0 +1,25 @@
+/* ==UserStyle==
+@name         imgur.com - stay focused
+@version      0.1.0
+@description  imgur.com - stay focused
+@namespace    tst2005/imgur-com
+@author       tst2005
+@homepageURL  https://github.com/usercss/misc
+@supportURL   https://github.com/usercss/misc/issues
+@updateURL    https://github.com/usercss/misc/raw/master/imgur-com.user.css
+@license      MIT
+@preprocessor uso
+==/UserStyle== */
+@-moz-document url-prefix("https://imgur.com/") {
+html body div#topbar {
+    display: none;
+}
+
+html body div#inside div#right-content {
+    display: none;
+}
+
+html body div#inside div.post-container div.post-images div.post-action {
+    display: none;
+}
+}
