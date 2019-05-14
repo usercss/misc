@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         creditmutuel.fr - no popup, no ads
-@version      0.1.0
+@version      0.1.1
 @description  creditmutuel.fr - no popup, no ads
 @namespace    tst2005/imgur-com
 @author       tst2005
@@ -19,6 +19,6 @@ html body div.ei-chat-main.ng-scope div.ng-scope {
 /* no ads insertied in my menu */
 html body div#gamemessagescontainer1.gameconfigurablemessages div[id^="messageContainer"].messageContainer,
 html body div#gamemessagescontainer1.gameconfigurablemessages div[id^="messageContainer"].messageContainer:before {
-    display: none;!important;
+    display: none !important;
 }
 }
