@@ -1,0 +1,20 @@
+/* ==UserStyle==
+@name         Universal text-align
+@version      0.1.0
+@description  Set the paragraph's text-align to justify
+@namespace    tst2005/universal-text-align
+@author       tst2005
+@homepageURL  https://github.com/usercss/misc
+@supportURL   https://github.com/usercss/misc/issues
+@updateURL    https://github.com/usercss/misc/raw/master/universal-text-align.user.css
+@license      MIT
+@preprocessor uso
+==/UserStyle== */
+@-moz-document url-prefix("https://"), url-prefix("http://") {
+html body p {
+    text-align: justify;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: none;
+}
+}
