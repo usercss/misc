@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         imgur.com - stay focused
-@version      0.1.0
+@version      0.2.0
 @description  imgur.com - stay focused
 @namespace    tst2005/imgur-com
 @author       tst2005
@@ -12,6 +12,10 @@
 ==/UserStyle== */
 @-moz-document url-prefix("https://imgur.com/") {
 html body div#topbar {
+    display: none;
+}
+
+html body #inside .left .post-container .post-header {
     display: none;
 }
 
