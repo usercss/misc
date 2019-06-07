@@ -1,0 +1,49 @@
+/* ==UserStyle==
+@name         factorioprints.com
+@version      0.1.0
+@description  Change the search result to a list view
+@namespace    tst2005/factorioprints.com
+@author       tst2005
+@homepageURL  https://github.com/usercss/misc
+@supportURL   https://github.com/usercss/misc/issues
+@updateURL    https://github.com/usercss/misc/raw/master/factorioprints.user.css
+@license      MIT
+@preprocessor uso
+==/UserStyle== */
+@-moz-document url-prefix("https://factorioprints.com/") {
+html body .blueprint-grid-row.row .truncate {
+    white-space: normal!important;
+    overflow: visible!important;
+    overflow-x: visible!important;
+    overflow-y: visible!important;
+    text-overflow: clip!important;
+}
+
+html body .blueprint-grid-row.row .row {
+    display: flow-root!important;
+}
+
+html body .blueprint-grid-row.row .col-auto {
+    width: 100em!important;
+}
+
+.blueprint-thumbnail.col-auto {
+    padding: 0;
+}
+.card {
+    margin: 0;
+}
+
+html body .blueprint-grid-row.row .card {
+    display: flex!important;
+}
+
+html body .blueprint-grid-row.row .card-img-top {
+    width: 5rem!important;
+}
+html body .blueprint-grid-row.row .card img {
+    filter: contrast(130%) brightness(130%)!important;
+    max-width: 20px;
+    height: 20px;
+}
+}
