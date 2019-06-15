@@ -26,4 +26,7 @@ html body div#inside div#right-content {
 html body div#inside div.post-container div.post-images div.post-action {
     display: none;
 }
+#upload-global {
+	display:none;
+}
 }
