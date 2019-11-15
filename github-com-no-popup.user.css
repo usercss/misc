@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         github.com - no-popup
-@version      0.2.1
+@version      0.2.2
 @description  github.com - no-popup
 @namespace    tst2005/github-com-no-popup
 @author       tst2005
@@ -59,6 +59,11 @@ html body.env-production aside[aria-label="Explore"] div.Box.border-blue.js-noti
 
 /* tips in review */
 div.Popover.js-suggested-change-onboarding-notice {
+    display: none;
+}
+
+/* no feature indicator */
+summary.Header-link span.feature-preview-indicator {
     display: none;
 }
 
