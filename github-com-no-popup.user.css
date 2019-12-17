@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         github.com - no-popup
-@version      0.2.2
+@version      0.2.3
 @description  github.com - no-popup
 @namespace    tst2005/github-com-no-popup
 @author       tst2005
@@ -16,7 +16,9 @@ body.logged-out div.signup-prompt-bg,
 #show_issue div#discussion_bucket div.discussion-timeline-actions div.flash.flash-warn,
 div.issues-listing div.signup-prompt-bg {display: none;}
 
-
+div.js-notice > div[class$="-banner"] {
+    display:none!important;
+}
 div.content.text-center.js-banner,
 .protip {
     display: none;
