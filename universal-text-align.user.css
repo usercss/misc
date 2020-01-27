@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Universal text-align
-@version      0.1.0
+@version      0.1.1
 @description  Set the paragraph's text-align to justify
 @namespace    tst2005/universal-text-align
 @author       tst2005
@@ -11,6 +11,7 @@
 @preprocessor uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://"), url-prefix("http://") {
+html body ul > li,
 html body p {
     text-align: justify;
     -webkit-hyphens: none;
