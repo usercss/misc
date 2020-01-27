@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         github.com - no-popup
-@version      0.2.3
+@version      0.2.4
 @description  github.com - no-popup
 @namespace    tst2005/github-com-no-popup
 @author       tst2005
@@ -66,6 +66,10 @@ div.Popover.js-suggested-change-onboarding-notice {
 
 /* no feature indicator */
 summary.Header-link span.feature-preview-indicator {
+    display: none;
+}
+/* 2020-01-27: issue search tips */
+div#partial-discussion-header.issue div.Popover.js-issue-xrefs-new-feature-notice {
     display: none;
 }
 
