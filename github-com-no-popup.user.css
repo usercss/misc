@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         github.com - no-popup
-@version      0.2.4
+@version      0.2.5
 @description  github.com - no-popup
 @namespace    tst2005/github-com-no-popup
 @author       tst2005
@@ -72,5 +72,8 @@ summary.Header-link span.feature-preview-indicator {
 div#partial-discussion-header.issue div.Popover.js-issue-xrefs-new-feature-notice {
     display: none;
 }
-
+* 2020-03-02: issues: tips about label */
+div.js-check-all-container > div.js-notice {
+    display: none;    
+}
 }
