@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         github.com - no-popup
-@version      0.2.6
+@version      0.2.7
 @description  github.com - no-popup
 @namespace    tst2005/github-com-no-popup
 @author       tst2005
@@ -74,6 +74,10 @@ div#partial-discussion-header.issue div.Popover.js-issue-xrefs-new-feature-notic
 }
 /* 2020-03-02: issues: tips about label */
 div.js-check-all-container > div.js-notice {
+    display: none;
+}
+/* hide the "Marked remaining XX notifications as read." */
+div#notification-center ul.notifications li.confirmation.mark-all-as-read-confirmed {
     display: none;
 }
 }
