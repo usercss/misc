@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         github.com - justified markdown text
-@version      0.1.1
+@version      0.2.0
 @description  github.com - justified markdown text
 @namespace    tst2005/github-com-justified-markdown
 @author       tst2005
@@ -11,6 +11,7 @@
 @preprocessor uso
 ==/UserStyle== */
 @-moz-document domain("github.com") {
+.repository-content p,
 html body article.markdown-body p {
     text-align: justify;
 }
