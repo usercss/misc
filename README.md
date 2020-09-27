@@ -1,5 +1,6 @@
 * [bortzmeyer.org - dark theme](https://github.com/usercss/misc/raw/master/bortzmeyer-org.user.css)
 * [creditmutuel.fr - no popup, no ads](https://github.com/usercss/misc/raw/master/creditmutuel-fr.user.css)
+* [discord.com - no-popup](https://github.com/usercss/misc/raw/master/discord.com-no-popup.user.css)
 * [factorioprints.com](https://github.com/usercss/misc/raw/master/factorioprints.user.css)
 * [gitea - book writers project on gitea](https://github.com/usercss/misc/raw/master/gitea-bookwriter.user.css)
 * [gitea §](https://github.com/usercss/misc/raw/master/gitea-paragrapher.user.css)

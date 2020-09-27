@@ -1,0 +1,33 @@
+/* ==UserStyle==
+@name         discord.com - no-popup
+@version      0.1.0
+@description  discord.com - no-popup
+@namespace    tst2005/discord.com-no-popup
+@author       tst2005
+@homepageURL  https://github.com/usercss/misc
+@supportURL   https://github.com/usercss/misc/issues
+@updateURL    https://github.com/usercss/misc/raw/master/discord.com-no-popup.user.css
+@license      MIT
+@preprocessor uso
+==/UserStyle== */
+@-moz-document url-prefix("https://discord.com/") {
+/* no sign up */
+/* masquer la barre d'incitation a telecharger l'app */
+div[class^="notice-"][class*="colorDefault-"],
+div[class^="base-"] div[class^="noticeDefault-"] {
+    display: none!important;
+}
+
+div[class*="nowPlayingScroller-"] > div[class*="consentCard-"] {
+    display: none!important;
+}
+
+/* no tips about ctrl+k */
+div[class*="channelNotice-"][class*="quickswitcher-"] {
+    display: none!important;
+}
+
+div[class*="channelNotice-"][class*="invite-"] {
+    display: none!important;
+}
+}
