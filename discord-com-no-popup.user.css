@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         discord.com - no-popup
-@version      0.1.0
+@version      0.2.0
 @description  discord.com - no-popup
 @namespace    tst2005/discord-com-no-popup
 @author       tst2005
@@ -15,6 +15,11 @@
 /* masquer la barre d'incitation a telecharger l'app */
 div[class^="notice-"][class*="colorDefault-"],
 div[class^="base-"] div[class^="noticeDefault-"] {
+    display: none!important;
+}
+
+/* pop up: View your server at any role */
+div[id*="popout_"][class*="layer-"] {
     display: none!important;
 }
 
