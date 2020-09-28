@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         discord.com - no-popup
-@version      0.2.0
+@version      0.2.1
 @description  discord.com - no-popup
 @namespace    tst2005/discord-com-no-popup
 @author       tst2005
@@ -19,7 +19,7 @@ div[class^="base-"] div[class^="noticeDefault-"] {
 }
 
 /* pop up: View your server at any role */
-div[id*="popout_"][class*="layer-"] {
+div[id*="popout_"][class*="layer-"] div[class*="subscribeTooltipWrapper-"] {
     display: none!important;
 }
 
