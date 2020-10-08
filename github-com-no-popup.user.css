@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         github.com - no-popup
-@version      0.3.0
+@version      0.4.0
 @description  github.com - no-popup
 @namespace    tst2005/github-com-no-popup
 @author       tst2005
@@ -11,10 +11,20 @@
 @preprocessor uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://github.com/") {
-/* no sign up */
+/* old: no sign up */
 body.logged-out div.signup-prompt-bg,
 #show_issue div#discussion_bucket div.discussion-timeline-actions div.flash.flash-warn,
 div.issues-listing div.signup-prompt-bg {display: none;}
+
+/* 2020-10-08: Join Github today (on repository main page) */
+body.logged-out signup-prompt {
+    display: none!important;
+}
+
+/* 2020-10-08: Cookies */
+body.logged-out .js-cookie-consent-banner {
+        display: none!important;
+}
 
 div.js-notice > div[class$="-banner"] {
     display:none!important;
