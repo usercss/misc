@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         github.com - no-popup
-@version      0.4.0
+@version      0.4.1
 @description  github.com - no-popup
 @namespace    tst2005/github-com-no-popup
 @author       tst2005
@@ -22,7 +22,7 @@ body.logged-out signup-prompt {
 }
 
 /* 2020-10-08: Cookies */
-body.logged-out .js-cookie-consent-banner {
+.js-cookie-consent-banner {
         display: none!important;
 }
 
