@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         github.com - no-popup
-@version      0.4.1
+@version      0.4.2
 @description  github.com - no-popup
 @namespace    tst2005/github-com-no-popup
 @author       tst2005
@@ -96,6 +96,10 @@ div.js-notifications-list-protip {
 }
 /* 2020-04-23: no feedback a top rigth */
 a[href*="feedback"] {
+    display:none!important
+}
+/* 2021-07-22: no Sponsors popup */
+div.js-notice[data-ga-load*="Sponsors"] {
     display:none!important
 }
 }
