@@ -1,0 +1,17 @@
+/* ==UserStyle==
+@name         duckduckgo.com no-ads
+@version      1.0.0
+@description  Hide Ads results
+@namespace    tst2005/duckduckgo.com-no-ads
+@author       tst2005
+@homepageURL  https://github.com/usercss/misc
+@supportURL   https://github.com/usercss/misc/issues
+@updateURL    https://github.com/usercss/misc/raw/master/duckduckgo.com-no-ads.css
+@license      MIT
+@preprocessor uso
+==/UserStyle== */
+@-moz-document url-prefix("https://duckduckgo.com/") {
+html li[data-layout="ad"] {
+    display:none;
+}
+}
